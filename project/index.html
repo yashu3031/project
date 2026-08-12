@@ -1,86 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <!-- SEO Meta Tags -->
-    <title>yashwanth| Web Developer Portfolio</title>
-    <meta name="description" content="Full-stack web developer specializing
-          in React and Node.js. Available for freelance projects.">
-    <meta name="keywords" content="web developer, React, JavaScript, portfolio">
-    <meta name="author" content="yashwanth">
- 
-    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp previews) -->
-    <meta property="og:title" content="yashwanth| Web Developer">
-    <meta property="og:description" content="Check out my portfolio and projects!">
-    <meta property="og:image" content="yas.jpeg">
-    <meta property="og:url" content="https://yashwanth.com">
-    <meta property="og:type" content="website">
- 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="yashwanth| Web Developer">
-    <meta name="twitter:description" content="Check out my portfolio!">
-</head>
-<body>
-    <nav>
-        <a href="">About</a>
-        <a href="">Skills</a>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
-    </nav>
-    <header>
-        <h1>Hi, I'm A Yeshwanth✌️</h1>
-        <p>I'm a passionate web developer from bengaluru</p>
-        <a href="">Hire Me</a>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="yas.jpeg" alt="profile pic" width="200px">
-        <p>I love building things on the web.Currently learning HTMl, CSS, Javascript AND React</p>
-    </section>
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>React</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yashwanth Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo">PS</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <h3>Project1</h3>
-            <p>Descrption of the project</p>
-            <a href="#">View project</a>
+        <button
+          class="theme-toggle"
+          title="Toggle Dark"
+          aria-label="Toggle dark mode"
+        >
+          🌙
+        </button>
+        <button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ≡
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section" id="hero">
+        <h1>Hi,I'm A Yeshwanth✌️</h1>
+        <p class="tagline">I'm a passionate web developer from bengaluru</p>
+        <div class="hero-button">
+          <a href="#projects" class="btn btn-primary">View My Project</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
+      </section>
+      <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <figure class="profile-figure">
+            <img src="yas.jpeg" alt="profile pic" width="200px" />
+            <figcaption>Yashwanth - web developer</figcaption>
+          </figure>
+          <div class="about-text">
+            <p>
+              I love building things on the web.Currently learning HTMl, CSS,
+              Javascript and React
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item" data-level="90">HTML</div>
+          <div class="skill-item" data-level="80">CSS</div>
+          <div class="skill-item" data-level="70">Javascript</div>
+          <div class="skill-item" data-level="60">React</div>
+        </div>
+      </section>
+      <section id="projects" class="project-section">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <article class="project-card" data-category="web">
+            <img src="pexels-kaique-rocha-125510.jpg" alt="weather project" width="300px">
+            <h3>Weather App</h3>
+            <p>Real-time weather dashboard using openWeather API</p>
+            <div class="project-tag">
+              <span class="tag">React</span>
+              <span class="tag">API</span>
+            </div>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">Github</a>
+          </article>
+          <article class="project-card" data-category="web">
+            <img src="claculator.png" alt="Simple Calculator" width="300px">
+            <h3>🧮 Simple Calculator</h3>
+            <p>Performs basic arithmetic operations.</p>
+            <div class="project-tag">
+              <span class="tag">React</span>
+              <span class="tag">API</span>
+            </div>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">Github</a>
+          </article>
+          <article class="project-card" data-category="web">
+            <img src="16836.jpg" alt="Student Management App 📚" width="300px">
+            <h3>Student Management App</h3>
+            <p>Stores and manages student details.</p>
+            <div class="project-tag">
+              <span class="tag">React</span>
+              <span class="tag">API</span>
+            </div>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">Github</a>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
         <p>Have a project in mind</p>
         <form action="">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <div class="form-group">
+             <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+          </div>
  
-            <label for="subject">Subject</label>
-            <select name="subject" id="subject">
-                <option value="">Select a topic</option>
-                <option value="hire">I want to hire you</option>
-                <option value="collab">I want to collaborate</option>
-                <option value="others">Others</option>
-            </select>
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" placeholder="Tell me about your project.."></textarea>
-            <button type="submit">Send Message 👍</button>
+          <div class="form-group">
+             <label for="email">Your Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          </div>
+          <div class="form-group">
+                <label for="subject">Subject</label>
+          <select name="subject" id="subject">
+            <option value="">Select a topic</option>
+            <option value="hire">I want to hire you</option>
+            <option value="collab">I want to collaborate</option>
+            <option value="others">Others</option>
+          </select>
+          </div>
+          <div class="form-group">
+             <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Tell me about your project.."
+          ></textarea>
+          </div>      
+          <button type="submit">Send Message 🚀</button>
         </form>
-        <p>Email: <a href="mailto:yeshwanth@gmail.com">yeshwanth@gmail.com</a></p>
-    </section>
-    <footer>
-        <p>&copy; 2026 A yeshwanth.All rights reserved</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2026 yashwanth.All rights reserved</p>
+      <nav aria-label="Social links">
+        <a href="github" target="_blank">Github</a>
+        <a href="linkedin" target="_blank">Linkedin</a>
+ 
+      </nav>
     </footer>
-</body>
+  </body>
 </html>
